@@ -9,31 +9,37 @@
 	</head>
 
 	<body>
-		<div>
+		<header>
 			<img src="Recursos/Logo.png">
-            <textarea id="textoentrada" class="textoentrada" placeholder="Ingrese el texto a encriptar aqui"></textarea>
-		</div>
-		<div>
-			<img src="Recursos/Vector.png">
-			<p>Solo letras minúsculas y sin tildes</p>
+		</header>
 
-			<input type="button" id="botonEncriptar" value="Encriptar">
-			<input type="button" id="botonDesencriptar" value="Desencriptar">
-			<input type="button" id="botonCopiar" value="Copiar Salida">
-		</div>
-		<div>
-			<img id="munheco" src="Recursos/Muneco.png"><br>
-			<label id="textosalida">Ningún mensaje fue encontrado</label>
-			<p id="mensajedescriptivo">Ingrese el texto que desees Encriptar o Desencriptar</p>
-		</div>
+		<main>
+            <textarea id="textoentrada" class="textoentrada" placeholder="Ingrese el texto aqui"></textarea>
 
-		<script src="./script.js"></script>
+			<div>
+				<img src="Recursos/Vector.png">
+				Solo letras minusculas y sin tildes
+				<br><br>
+
+				<input type="button" id="botonEncriptar" value="Encriptar">
+				<input type="button" id="botonDesencriptar" value="Desencriptar">
+				<input type="button" id="botonCopiar" value="Copiar Salida">
+			</div>
+			<div>
+				<img id="munheco" src="Recursos/Muneco.png"><br>
+				<label id="textosalida">Ningun mensaje fue encontrado</label>
+				<p id="mensajedescriptivo">Ingrese el texto que desees Encriptar o Desencriptar</p>
+			</div>
+		</main>
+
+		<footer>
+			<p class="copyright">&copy Copyright - Todos los derechos reservados. <br>
+				Made by	Calos - 2023
+			</p>
+		</footer>
 
 	</body>
-	<footer>
-		<p class="copyright">&copy Copyright - Todos los derechos reservados. <br>
-			Made by	Calos - 2023
-		</p>
-	</footer>
+
+	<script src="./script.js"></script>
 
 </html>
