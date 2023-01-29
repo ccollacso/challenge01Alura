@@ -1,3 +1,4 @@
+	
 	var botonEncriptar = document.getElementById("botonEncriptar");
 	botonEncriptar.addEventListener("click", encriptar);
 
@@ -6,7 +7,7 @@
 
 	var botonCopiar = document.getElementById("botonCopiar");
 	botonCopiar.addEventListener("click", copiar);
-
+	
 	function encriptar(){
 
 		var textoEntrada = document.getElementById('textoentrada').value;
@@ -109,12 +110,13 @@
 		var validador = /^[a-z0-9 ]+$/;
 		return validador.test(textoEntrada);
 	}
-	function copiar(textosalida){
+	function copiar(){
 
 		var aux = document.createElement("input");
 		aux.setAttribute("value", document.getElementById("textosalida").innerHTML);
 		document.body.appendChild(aux);
 		aux.select();
 		document.execCommand("copy");
-		document.body.removeChild(aux)
+		document.body.removeChild(aux);
+		
 	}

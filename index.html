@@ -10,13 +10,12 @@
 
 	<body>
 		<header>
-			<img src="Recursos/Logo.png">
+			<img id="logo" src="Recursos/Logo.png">
+			<textarea id="textoentrada" class="textoentrada" placeholder="Ingrese el texto aqui"></textarea>
 		</header>
 
 		<main>
-            <textarea id="textoentrada" class="textoentrada" placeholder="Ingrese el texto aqui"></textarea>
-
-			<div>
+			<div id="descripcion">
 				<img src="Recursos/Vector.png">
 				Solo letras minusculas y sin tildes
 				<br><br>
@@ -24,10 +23,12 @@
 				<input type="button" id="botonEncriptar" value="Encriptar">
 				<input type="button" id="botonDesencriptar" value="Desencriptar">
 				<input type="button" id="botonCopiar" value="Copiar Salida">
+				
 			</div>
-			<div>
+			<div id="resultado">
 				<img id="munheco" src="Recursos/Muneco.png"><br>
 				<label id="textosalida">Ningun mensaje fue encontrado</label>
+				<!--Posiblemente no aplica text.align center por el float left del div resultado, revisar jerarquias-->
 				<p id="mensajedescriptivo">Ingrese el texto que desees Encriptar o Desencriptar</p>
 			</div>
 		</main>
