@@ -51,7 +51,6 @@
 			*/
 
 			document.getElementById("munheco").style.display = "none";
-			document.getElementById("mensajedescriptivo").style.display = "none";
 			document.getElementById("textosalida").innerHTML = textoEncriptado;
 		}
 	}
@@ -103,6 +102,7 @@
 
 		document.getElementById("textosalida").innerHTML = textoDesencriptado;
 	}
+	//añadir borrar texto de entrada y poner el focus en el textarea
 
 	function validarTexto(textoEntrada){
 

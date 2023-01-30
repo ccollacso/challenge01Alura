@@ -10,7 +10,7 @@
 
 	<body>
 		<header>
-			<img id="logo" src="Recursos/Logo.png">
+			<a href="https://www.aluracursos.com/" target=”_blank”><img id="logo" src="Recursos/Logo.png"></a>
 			<textarea id="textoentrada" class="textoentrada" placeholder="Ingrese el texto aqui"></textarea>
 			<div class="aviso">
 				<img src="Recursos/Vector.png">
@@ -25,11 +25,12 @@
 				<input class="botonaccion" type="button" id="botonDesencriptar" value="Desencriptar">
 				<input class="botonaccion" type="button" id="botonCopiar" value="Copiar Salida">
 			</div>
+			<!--TODO: redimensionar div para evitar mal posicionamiento cuando el texto de salida es extenso-->
 			<div id="resultado">
 				<img id="munheco" src="Recursos/Muneco.png"><br>
 				<label id="textosalida">Ningun mensaje fue encontrado</label>
-				<!--Posiblemente no aplica text.align center por el float left del div resultado, revisar jerarquias-->
-				<p id="mensajedescriptivo">Ingrese el texto que desees Encriptar o Desencriptar</p>
+				<!--TODO: revisar alineación. Posiblemente no aplica text.align center 
+				por el float left del div resultado, revisar jerarquias-->
 			</div>
 		</main>
 
