@@ -12,18 +12,18 @@
 		<header>
 			<img id="logo" src="Recursos/Logo.png">
 			<textarea id="textoentrada" class="textoentrada" placeholder="Ingrese el texto aqui"></textarea>
+			<div class="aviso">
+				<img src="Recursos/Vector.png">
+				<p id="textoaviso">Solo letras minusculas y sin tildes</p>
+				<br><br>
+			</div>
 		</header>
 
 		<main>
-			<div id="descripcion">
-				<img src="Recursos/Vector.png">
-				Solo letras minusculas y sin tildes
-				<br><br>
-
-				<input type="button" id="botonEncriptar" value="Encriptar">
-				<input type="button" id="botonDesencriptar" value="Desencriptar">
-				<input type="button" id="botonCopiar" value="Copiar Salida">
-				
+			<div class="botones">
+				<input class="botonaccion" type="button" id="botonEncriptar" value="Encriptar">
+				<input class="botonaccion" type="button" id="botonDesencriptar" value="Desencriptar">
+				<input class="botonaccion" type="button" id="botonCopiar" value="Copiar Salida">
 			</div>
 			<div id="resultado">
 				<img id="munheco" src="Recursos/Muneco.png"><br>

@@ -1,3 +1,15 @@
+body{
+	background-image: url('Recursos/background.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#textoaviso{
+	display: inline;
+	color: white;
+}
+
 #logo{
 	display: block;
 	margin-left: 0px;
@@ -9,11 +21,41 @@
 	width: 577px;
     height: 48px;
 	margin-left: 50px;
+	display: block;
 }
 
-#descripcion{
+.aviso{
+	margin-top: 10px;
+	margin-left: 50px;
+}
+
+.botones{
+    height: 376px;
 	float:left;
 	margin-left: 50px;
+	display: flex;
+	align-items: center;
+	/*justify-content: center; - estilo para centrar un elemento horizontalmente*/
+}
+
+.botonaccion{
+	margin: 10px;
+	color: #0099CC;
+	background: transparent;
+	border: 2px solid #0099CC;
+	border-radius: 6px;
+	width: 150px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.botonaccion:hover{
+	background-color: #008CBA;
+	color: white;
+}
+
+#mensajedescriptivo{
+	color: white;
 }
 
 #resultado{
@@ -24,6 +66,7 @@
 #textosalida{
 	align: center;
 	font-weight: bold;
+	color: white;
 }
 
 footer{
@@ -32,4 +75,5 @@ footer{
 	position: absolute;
 	bottom: 10px;
 	width: 98%;
+	color: white;
 }
