@@ -101,8 +101,8 @@
 		textoDesencriptado = textoDesencriptado.replaceAll("ufat", "u");
 
 		document.getElementById("textosalida").innerHTML = textoDesencriptado;
+		
 	}
-	//añadir borrar texto de entrada y poner el focus en el textarea
 
 	function validarTexto(textoEntrada){
 
@@ -118,5 +118,9 @@
 		aux.select();
 		document.execCommand("copy");
 		document.body.removeChild(aux);
+
+		//limpia el textarea y centra el foco en este elemento
+		document.getElementById("textoentrada").value = "";
+		document.getElementById("textoentrada").focus();
 		
 	}
