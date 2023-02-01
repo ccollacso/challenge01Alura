@@ -65,7 +65,9 @@ body{
 
 #resultado{
 	float:right;
-	margin-right:50px
+	margin-right:50px;
+	width: 400px;
+	height: 300px;
 }
 
 #textosalida{
